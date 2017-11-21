@@ -7,13 +7,13 @@ No they are not different.
 
 
 
-### How are `%` and `Math.floorMod` different? Which works more reliably for computing a hash table index?
+## How are `%` and `Math.floorMod` different? Which works more reliably for computing a hash table index?
 
 math.floormod would work better for this case, because it knows how to deal with negative numbers, and not return them, whereas Modulo alone cannot do that.
 
-### What is the time complexity of `MyHashMap.size()`, and how could you make it much more efficient?
+## What is the time complexity of `MyHashMap.size()`, and how could you make it much more efficient?
 
 
 
-### How does this implementation compare to one where you would directly use your linked `Node` class from the earlier assignment? Answer briefly in terms of ease of implementation, correctness, reliability, and performance.
+## How does this implementation compare to one where you would directly use your linked `Node` class from the earlier assignment? Answer briefly in terms of ease of implementation, correctness, reliability, and performance.
 
