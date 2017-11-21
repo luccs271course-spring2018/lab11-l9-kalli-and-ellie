@@ -132,16 +132,9 @@ public class MyHashMap<K, V> implements Map<K, V> {
   @Override
   public void putAll(final Map<? extends K, ? extends V> m) {
     // DONE ? add each entry in m's entrySet
-    int numKeysToBeAdded = m.size();
-    if (numKeysToBeAdded == 0){
-      return;
+    for (Map.Entry<? extends K, ? extends V> entry : m.entrySet()) {
+      this.put(entry.getKey(), entry.getValue());
     }
-
-   for (Iterator<? extends Map.Entry<? extends K, ? extends V>> i = m.entrySet().iterator(); i.hasNext(); ) {
-       Map.Entry<? extends K, ? extends V> e = i.next();
-       put(e.getKey(), e.getValue());
-   }
-
   }
 
   @Override
@@ -158,8 +151,14 @@ public class MyHashMap<K, V> implements Map<K, V> {
   @Override
   public Set<K> keySet() {
     final Set<K> result = new HashSet<>();
-    // TODO populate the set
-
+    // DONE ? populate the set
+     for (int n = 0; n < DEFAULT_TABLE_SIZE; n++) {
+      final Iterator<Entry<K, V>> iter = table.get(n).iterator();
+      while (iter.hasNext()) {
+        Entry<K, V> tempK = iter.next();
+        result.add(tempK.getKey());
+      }
+    }
     return Collections.unmodifiableSet(result);
   }
 
@@ -167,9 +166,14 @@ public class MyHashMap<K, V> implements Map<K, V> {
   @Override
   public Collection<V> values() {
     final List<V> result = new LinkedList<>();
-    // TODO populate the list
-
-
+    // DONE ? populate the list
+    for (int n = 0; n < DEFAULT_TABLE_SIZE; n++) {
+      final Iterator<Entry<K, V>> iter = table.get(n).iterator();
+      while (iter.hasNext()) {
+        Entry<K, V> tempV = iter.next();
+        result.add(tempV.getValue());
+      }
+    }
     return Collections.unmodifiableCollection(result);
   }
 
