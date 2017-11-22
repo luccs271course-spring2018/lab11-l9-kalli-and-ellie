@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.luc.cs271.myhashmap.TestMyHashMap" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-22T00:32:18" hostname="kkleinschmidt-lab09-5618507" time="0.004">
+<testsuite name="edu.luc.cs271.myhashmap.TestMyHashMap" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-22T00:38:51" hostname="kkleinschmidt-lab09-5618507" time="0.039">
   <properties/>
   <testcase name="testClear" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.002"/>
   <testcase name="testEmpty" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
-  <testcase name="testContainsKey" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
-  <testcase name="testContainsValue" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
-  <testcase name="testEquals" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
-  <testcase name="testPutAll" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.001"/>
+  <testcase name="testContainsKey" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.01"/>
+  <testcase name="testContainsValue" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.001"/>
+  <testcase name="testEquals" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.013"/>
+  <testcase name="testPutAll" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
   <testcase name="testRemove" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
   <testcase name="testNonEmpty" classname="edu.luc.cs271.myhashmap.TestMyHashMap" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
