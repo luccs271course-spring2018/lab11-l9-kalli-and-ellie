@@ -41,10 +41,10 @@ public class TestMyHashMap {
     // TODO run the SUT on a specific String iterator with some repeated words,
     // then use assertions to verify the correct counts
     // do this for at least two words in the iterator and two not in the iterator
-    fixture.put("hello", 3);
-    fixture.put("world", 4);
-    fixture.put("what", 5);
-    fixture.put("up", 6);
+    assertNull(fixture.put("hello", 3));
+    assertNull(fixture.put("world", 4));
+    assertNull(fixture.put("what", 5));
+    assertNull(fixture.put("up", 6));
     assertEquals(Integer.valueOf(6), fixture.put("up", 4));
     assertFalse(fixture.isEmpty());
     assertEquals(4, fixture.size());
