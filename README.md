@@ -25,7 +25,7 @@ Specifically:
 1. Download this book (or use the file you already downloaded): https://archive.org/stream/lesmisrables01unkngoog/lesmisrables01unkngoog_djvu.txt.
 1. Use the program to determine the 10 most frequent words and their frequencies in this text by redirecting stdin from the downloaded file:
 
-        ./build/scripts/cs2-lab11-hashtable-java < lesmisrables01unkngoog_djvu.txt
+        ./build/scripts/lab11-l9-kalli-and-ellie < lesmisrables01unkngoog_djvu.txt
         time in ms: 762
         the=33282
         of=18016
